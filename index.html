@@ -1,0 +1,70 @@
+<!Doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta hhtp-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-xidth, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulaire</title>
+  </head>
+  <body id="body">
+    <main id="main">
+      <div id="container">
+    <header>
+      <h1 id="title">Formulaire d'enquête</h1>
+      <p id="description">Merci d'avoir visité notre site, aider nous à améliorer notre plateforme</p> 
+      <br><br>
+    </header>
+    <form id="survey-form">
+      <div class="input-group">
+        <label id="name-label" for="name">Nom</label><br>
+        <input type="text" id="name" placeholder="Entrer votre nom" required="required">
+   
+        <label id="email-label" for="email">Email</label><br>
+        <input type="email" id="email" placeholder="Entrer votre adresse mail" required="required">
+      
+        <label id="number-label" for="age">Age</label><br>
+        <input type="number" id="number" min="16" max="120" placeholder="33" required="required">
+      </div>
+        
+      <div class="input-group">
+        <label for="level">Qu'avez vous penser de notre plateforme</label><br>
+  <select id="dropdown" name="level">
+    <option value="volvo" selected>Bon</option>
+    <option value="saab">Moyen</option>
+    <option value="opel" >Médiocre</option>
+  </select>
+  <br>
+      </div>
+     
+      <div class="input-group">
+        <p>Recommanderiez-vous notre plateforme à un ami ?           </p>
+  <input type="radio" id="absoutely" name="recommendations" value="absoutely" selected>
+  <label for="absoutely">Absolument</label><br>
+  <input type="radio" id="may be" name="recommendations" value="may be">
+  <label for="may be">Peut-être</label><br>  
+  <input type="radio" id="not sure" name="recommendations" value="not sure">
+  <label for="not sure">Pas certains</label><br>
+      </div>
+      
+      <div class="input-group">
+        <p>Que souhaiteriez-vous voir amélioré ?</p>
+        <input type="checkbox" id="communication" name="improvement"
+         checked value="communication">
+        <label for="after sales service">Communication</label>
+        <input type="checkbox" id="after sales service" name="improvement" value="after sales service">
+        <label for="after sales service">Service après vente</label>
+      </div>
+      
+      <div class="input-group">
+        <label for="comments">Commentaires ou suggestions?</label><br>
+        <textarea id="comments" rows="10" cols="33" placeholder="Entrer un commentaire ou une suggestion"></textarea>
+      </div>
+      <br>
+       <input type="submit" value="Envoyer" id="submit">
+    </form>
+    </div>
+    </main>
+    
+  </body>
+</html>
